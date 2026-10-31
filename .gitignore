@@ -1,0 +1,70 @@
+# Git Ignore for anim.e Studio
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/.venv/
+.venv/
+venv/
+ENV/
+env/
+*.env
+*.env.*
+!.env.example
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ComfyUI Engine & Portable Binaries (~9.5 GB)
+engine/ComfyUI_windows_portable/
+engine/tools/
+*.7z
+*.7z.*
+*.part
+
+# Large Model Weights & Checkpoints
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.onnx
+
+# Local Persistent Application Data & Generated Media
+data/app.db
+data/app.db-wal
+data/app.db-shm
+data/outputs/
+data/thumbnails/
+data/temp/
+data/logs/
+data/backups/
+data/.comfyui.pid
+
+# Keep empty structure in repository
+!data/.gitkeep
+!data/outputs/.gitkeep
+!data/thumbnails/.gitkeep
+!data/temp/.gitkeep
+!data/logs/.gitkeep
+
+# IDE & OS Artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Future Frontend
+frontend/node_modules/
+frontend/dist/
+dist/
+node_modules/
+

@@ -1,0 +1,56 @@
+{
+  "comfyui_portable_version": "v0.43.0 (cu126)",
+  "comfyui_commit": "426f5eea52a7ece1dd599fff4cb6cd1f352ddd24",
+  "custom_nodes": {
+    "ComfyUI-AnimateDiff-Evolved": {
+      "url": "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved.git",
+      "commit": "9257651221002dcba0a12f9cff37e1944e58fb60",
+      "license": "Apache-2.0"
+    },
+    "ComfyUI-VideoHelperSuite": {
+      "url": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git",
+      "commit": "4d907bee61e92c2e65af3bd6383a4e4d356126d1",
+      "license": "GPL-3.0"
+    }
+  },
+  "python_packages": {
+    "imageio-ffmpeg": "0.6.0",
+    "opencv-python-headless": "4.11.0.86"
+  },
+  "models": [
+    {
+      "name": "Counterfeit-V3.0_fix_fp16.safetensors",
+      "type": "checkpoint (SD 1.5 FP16 Pruned)",
+      "license": "CreativeML OpenRAIL-M",
+      "url": "https://huggingface.co/gsdf/Counterfeit-V3.0/resolve/main/Counterfeit-V3.0_fix_fp16.safetensors",
+      "size_bytes": 2132651162,
+      "size_mib": 2033.85,
+      "path": "engine\\ComfyUI_windows_portable\\ComfyUI\\models\\checkpoints\\Counterfeit-V3.0_fix_fp16.safetensors"
+    },
+    {
+      "name": "vae-ft-mse-840000-ema-pruned.safetensors",
+      "type": "vae (SD 1.5 FP16 Pruned)",
+      "license": "CreativeML OpenRAIL-M / MIT",
+      "url": "https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors",
+      "size_bytes": 334641190,
+      "size_mib": 319.14,
+      "path": "engine\\ComfyUI_windows_portable\\ComfyUI\\models\\vae\\vae-ft-mse-840000-ema-pruned.safetensors"
+    },
+    {
+      "name": "mm_sd_v15_v2.ckpt",
+      "type": "motion_module (AnimateDiff v2 SD 1.5)",
+      "license": "Apache-2.0",
+      "url": "https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt",
+      "size_bytes": 1817888431,
+      "size_mib": 1733.67,
+      "path": "engine\\ComfyUI_windows_portable\\ComfyUI\\custom_nodes\\ComfyUI-AnimateDiff-Evolved\\models\\mm_sd_v15_v2.ckpt"
+    }
+  ],
+  "ffmpeg_binary": "C:\\Users\\Renz Jericho Buday\\Anim.e\\engine\\ComfyUI_windows_portable\\python_embeded\\Lib\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+  "runtime": {
+    "python": "3.12.10",
+    "torch": "2.14.1+cu126",
+    "cuda": "12.6",
+    "device": "NVIDIA GeForce RTX 3050 Laptop GPU"
+  }
+}

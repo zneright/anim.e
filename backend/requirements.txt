@@ -1,0 +1,11 @@
+fastapi==0.115.8
+uvicorn[standard]==0.34.0
+aiosqlite==0.21.0
+pydantic==2.10.6
+pydantic-settings==2.7.1
+httpx==0.28.1
+websockets==14.2
+pillow==11.1.0
+pytest==8.3.4
+pytest-asyncio==0.25.3
+
